@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact | Jiya Modi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<header>
+    <div style="font-weight: 800; font-size: 1.2rem;">JIYA MODI</div>
+    <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<main class="container">
+    
+    <section>
+        <h2 class="section-title">Get In Touch</h2>
+        <p style="color: var(--text-muted); margin-bottom: 30px;">
+            I am currently seeking <strong>Cloud or DevOps internship opportunities</strong> for 2026. 
+            Whether you have a question or just want to connect, my inbox is always open.
+        </p>
+    </section>
+
+    <section class="info-card" style="border-top: 5px solid var(--azure);">
+        <h3 style="margin-bottom: 20px;">Send a Message</h3>
+        <form action="#" method="POST" netlify name="contact" style="display: flex; flex-direction: column; gap: 20px;">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                <div style="display: flex; flex-direction: column; gap: 8px;">
+                    <label style="font-weight: 600; font-size: 0.9rem;">Full Name</label>
+                    <div class="contact-grid">
+                    <input type="text" name="full-name" placeholder="Enter your name" required 
+                           style="padding: 12px; border: 2px solid var(--border-bold); border-radius: 8px; outline-color: var(--azure);">
+                    </div>
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 8px;">
+                    <label style="font-weight: 600; font-size: 0.9rem;">Email Address</label>
+                    <div class="contact-grid">
+                    <input type="email" name="email" placeholder="email@example.com" required 
+                           style="padding: 12px; border: 2px solid var(--border-bold); border-radius: 8px; outline-color: var(--azure);">
+                    </div>
+                </div>
+            </div>
+            
+            <div style="display: flex; flex-direction: column; gap: 8px;">
+                <label style="font-weight: 600; font-size: 0.9rem;">Message</label>
+                <textarea name="message" rows="5" placeholder="How can I help you?" required 
+                          style="padding: 12px; border: 2px solid var(--border-bold); border-radius: 8px; outline-color: var(--azure); font-family: inherit;"></textarea>
+            </div>
+
+            <button type="submit" class="btn-azure" style="border: none; cursor: pointer; align-self: flex-start;">
+                Send Message
+            </button>
+        </form>
+    </section>
+
+    <hr class="section-divider">
+
+    <section>
+        <h2 class="section-title">Connect Elsewhere</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+            
+            <div class="info-card" style="margin-bottom: 0;">
+                <h4 style="color: var(--teal); margin-bottom: 10px;">Location</h4>
+                <p>Ahmedabad, Gujarat, India</p>
+            </div>
+
+            <div class="info-card" style="margin-bottom: 0;">
+                <h4 style="color: var(--teal); margin-bottom: 10px;">Digital Profiles</h4>
+                <p style="margin-bottom: 5px;"><strong>Email:</strong><span style="color: var(--azure); padding-left:5px ;">modijiya156@gmail.com</span></p>
+                <p style="margin-bottom: 5px;"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/jiya-modi-2641032bb/" style="color: var(--azure); padding-left:5px ;">linkedin.com/in/jiya-modi</a></p>
+                <p><strong>GitHub:</strong> <a href="https://github.com/Jiya156" style="color: var(--azure); padding-left:5px ;"> github.com/Jiya156</a></p>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p style="margin-top: 10px;">&copy; 2026 Jiya Modi. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

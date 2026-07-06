@@ -1,0 +1,353 @@
+/* style.css */
+:root {
+    --azure: #007FFF;        /* Azure Blue */
+    --teal: #0d9488;         /* Professional Teal */
+    --text-dark: #1e293b;    /* Deep slate for text */
+    --text-light: #64748b;   /* Muted slate for subtext */
+    --bg-white: #ffffff;
+    --border-soft: #f1f5f9;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background-color: var(--bg-white);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+header {
+    padding: 1.5rem 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    border-bottom: 1px solid var(--border-soft);
+}
+
+.nav-links a {
+    margin-left: 2rem;
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.nav-links a:hover { color: var(--azure); }
+
+/* Hero Section with Image */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    max-width: 1100px;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+
+.hero-text { flex: 1; }
+
+.hero-image-container {
+    flex: 0 0 350px;
+    height: 350px;
+    position: relative;
+}
+
+/* Creating a clean frame for your picture */
+.profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px; /* Modern rounded corners */
+    border: 8px solid white;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+/* Teal Accent Bar */
+.hero-image-container::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    right: -15px;
+    width: 100px;
+    height: 100px;
+    background: var(--teal);
+    z-index: -1;
+    border-radius: 20px;
+    opacity: 0.3;
+}
+
+.btn-azure {
+    background: var(--azure);
+    color: white;
+    padding: 12px 30px;
+    border-radius: 6px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+/* Simplest Footer */
+footer {
+    text-align: center;
+    padding: 40px 0;
+    margin-top: 100px;
+    border-top: 1px solid var(--border-soft);
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+
+
+
+
+/* Add this to your style.css if not already there */
+ul li {
+    font-size: 0.95rem;
+    color: var(--text-dark);
+}
+
+ul li strong {
+    color: var(--azure);
+}
+
+
+.skill-new-tag{
+    color: var(--azure);
+    font-weight: 600;
+}
+
+
+
+
+
+input:focus, textarea:focus {
+    border-color: var(--azure) !important;
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgba(0, 127, 255, 0.1);
+}
+
+.btn-azure:hover {
+    background-color: var(--teal);
+    transform: translateY(-2px);
+}
+
+
+
+
+
+
+
+
+:root {
+    --azure: #007FFF;
+    --teal: #0d9488;
+    --text-dark: #1e293b;
+    --text-muted: #475569;
+    --border-bold: #cbd5e1; /* Darker, more visible border */
+    --bg-light: #f8fafc;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    background-color: #ffffff;
+    color: var(--text-dark);
+}
+
+/* Fix: Centering the content and preventing it from sticking to the screen edge */
+.container {
+    max-width: 900px; /* Narrower width for better readability */
+    margin: 0 auto;
+    padding: 60px 40px; /* Generous side padding */
+}
+
+header {
+    padding: 1.5rem 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--border-bold);
+}
+
+/* Horizontal Break Line */
+hr.section-divider {
+    border: 0;
+    border-top: 2px solid var(--border-bold);
+    margin: 50px 0;
+}
+
+/* Section Headings */
+h2.section-title {
+    color: var(--azure);
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+}
+
+/* Added a small vertical bar before the title for extra visual "pop" */
+h2.section-title::before {
+    content: "";
+    width: 6px;
+    height: 30px;
+    background: var(--teal);
+    margin-right: 15px;
+    border-radius: 4px;
+}
+
+/* Card Styling: Darker borders and better alignment */
+.info-card {
+    background: var(--bg-light);
+    border: 2px solid var(--border-bold); /* Stronger border */
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 20px;
+}
+
+.skill-category {
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+}
+
+.skill-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.skill-tag {
+    background: white;
+    border: 1.5px solid var(--azure);
+    color: var(--text-dark);
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.date-text {
+    color: var(--teal);
+    font-weight: bold;
+    font-size: 0.9rem;
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+
+
+
+
+
+
+/* style.css - Responsive Version */
+:root {
+    --azure: #007FFF;
+    --teal: #0d9488;
+    --text-dark: #1e293b;
+    --text-muted: #475569;
+    --border-bold: #cbd5e1;
+    --bg-light: #f8fafc;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff;
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+/* CONTAINER FIX: Prevents sticking to edges and handles mobile margins */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px 20px; /* Reduced from 40px for mobile safety */
+}
+
+/* NAVBAR: Wraps on mobile */
+header {
+    padding: 1.5rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--border-bold);
+    flex-wrap: wrap; /* Allows menu to move below logo if needed */
+}
+
+.nav-links a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 500;
+}
+
+/* HERO SECTION: Image and text stacking */
+.hero {
+    display: flex;
+    flex-direction: row; /* Desktop default */
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.profile-img {
+    width: 300px; /* Specific size for desktop */
+    height: auto;
+    border-radius: 20px;
+    border: 4px solid var(--border-bold);
+}
+
+/* CARD SYSTEM */
+.info-card {
+    background: var(--bg-light);
+    border: 2px solid var(--border-bold);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* 📱 MOBILE RESPONSIVENESS (Screens under 768px) */
+@media (max-width: 768px) {
+    .container {
+        padding: 40px 15px; /* Narrower padding for small screens */
+    }
+
+    /* Stack Hero elements vertically */
+    .hero {
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    .profile-img {
+        width: 200px; /* Smaller image on mobile */
+        margin: 0 auto;
+    }
+
+    /* Adjust font sizes for mobile legibility */
+    h1 { font-size: 2.2rem !important; }
+    h2 { font-size: 1.6rem !important; }
+
+    /* Fix Nav spacing */
+    .nav-links {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 15px;
+    }
+
+    .nav-links a { margin: 0; font-size: 0.9rem; }
+
+    /* Form Fields: Stack inputs on mobile */
+    .contact-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+}
